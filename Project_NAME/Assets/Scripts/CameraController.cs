@@ -1,5 +1,4 @@
 using UnityEngine;
-using Unity.InputSystem;
 using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
@@ -9,21 +8,26 @@ public class CameraController : MonoBehaviour
     public float rotationSpeed = 5f;
     public float zoomSpeed = 1f;
 
-    [SerializeField] private Vector2 currentRotation;
-    [SerializeField] private InputAction rotateHorizAction;
-    [SerializeField] private InputAction rotateVertAction;
-    [SerializeField] private InputAction zoomAction;
+    [SerializeField] private Vector2 currentRotation; 
+    [SerializeField] private InputActionAsset inputActions; 
+
+    private InputAction rotateHorizAction;
+    private InputAction rotateVertAction;
+    private InputAction zoomAction;
 
     void Awake()
     {
-        var controls = new InputActionAsset("CameraControls");
-        rotateHorizAction = controls.FindAction("RotateHorizontal");
-        rotateVertAction = controls.FindAction("RotateVertical");
-        zoomAction = controls.FindAction("Zoom");
+        rotateHorizAction = inputActions.FindAction("RotateHorizontal");
+        rotateVertAction = inputActions.FindAction("RotateVertical");
+        zoomAction = inputActions.FindAction("Zoom");
 
         rotateHorizAction.performed += RotateHorizontal;
         rotateVertAction.performed += RotateVertical;
         zoomAction.performed += Zoom;
+
+        rotateHorizAction.Enable();
+        rotateVertAction.Enable();
+        zoomAction.Enable();
     }
 
     void LateUpdate()
@@ -45,7 +49,7 @@ public class CameraController : MonoBehaviour
     void Zoom(InputAction.CallbackContext ctx)
     {
         distance -= ctx.ReadValue<float>() * zoomSpeed;
-        distance = Mathf.Clamp(distance, 5f, 20f);
+        distance = Mathf.Clamp(distance, 5f, 20f); 
     }
 
     void ApplyRotation()

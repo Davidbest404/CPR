@@ -427,6 +427,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46ad264f25c118848a1f4dd1a1b0470d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 9115481933270045857}
+  distance: 10
+  rotationSpeed: 5
+  zoomSpeed: 1
+  currentRotation: {x: 0, y: 0}
+  inputActions: {fileID: -944628639613478452, guid: 25a2b8afb9de4614e840cffc3ce1c3c1, type: 3}
 --- !u!1001 &8461461686086080698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -507,6 +513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e716c64f09cbf448baca731cc78e241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInput: {fileID: 0}
+  characterControls: {fileID: -944628639613478452, guid: 96764ea69454e4f42a85c003eaaab2bb, type: 3}
+  vehicleControls: {fileID: -944628639613478452, guid: 0e009fbd2d362bc4180833b7b16c18b9, type: 3}
 --- !u!54 &8461461686086080701
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -616,6 +625,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 7
+  rb: {fileID: 9115481933270045856}
+  movementInput: {x: 0, y: 0}
+  isJumping: 0
 --- !u!54 &9115481933270045856
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -643,6 +655,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &9115481933270045857 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4811510392293160524, guid: 370062986326d8841943f2f4010ad5a1, type: 3}
+  m_PrefabInstance: {fileID: 9115481933270045853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
