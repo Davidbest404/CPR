@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5042927350139182622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6222784823877230257}
+  - component: {fileID: 8728001549182100286}
+  m_Layer: 0
+  m_Name: EnemyOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6222784823877230257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042927350139182622}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.20113, y: 0.38311327, z: -0.44176015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8728001549182100286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042927350139182622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2082be00da0da654bacdf24d9ba50d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyReference: {fileID: 8424476506604715482, guid: f250582ecd64f764bb94da2dc4abf527, type: 3}
+  enemiesMaxHealth: 2
+  rowCount: 2
+  collumnCount: 4
+  verticalGap: 0.75
+  horizontalGap: 1.25
+  MoveStepDelay: 12
+  MoveStepAmount: 0.25
+  ShootingDelay: 16
+  dataForProjectiles:
+    <Velocity>k__BackingField: {x: 0, y: -0.5}
+    <HitboxSize>k__BackingField: {x: 0.5, y: 1}
+    <LifeTime>k__BackingField: 15
+    <Damage>k__BackingField: 1
+    <IncludedMask>k__BackingField:
+      serializedVersion: 2
+      m_Bits: 8
+    <ProjectileColor>k__BackingField: {r: 1, g: 0, b: 0, a: 1}
