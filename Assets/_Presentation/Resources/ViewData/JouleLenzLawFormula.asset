@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25613da597ba59d43bc1b9107ba94717, type: 3}
+  m_Name: JouleLenzLawFormula
+  m_EditorClassIdentifier: Assembly-CSharp:CalculatorSystem.Data:JouleLenzLawFormula
+  <Formula>k__BackingField: "(Q = I\xB2Rt)"
+  <Args>k__BackingField:
+  - <Name>k__BackingField: Current strength
+  - <Name>k__BackingField: Resistance
+  - <Name>k__BackingField: Time
