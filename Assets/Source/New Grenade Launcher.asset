@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810f0257e6d7ebc4e93ac0e51eec87b0, type: 3}
+  m_Name: New Grenade Launcher
+  m_EditorClassIdentifier: Assembly-CSharp::TemplateMethod.GrenadeLauncher
+  projectilePrefab: {fileID: 6868037961968627346, guid: 220451cdb5ea271489db41faa8fa7456, type: 3}
+  projectileSpeed: 20
+  damage: 10
+  arcAngle: 30
